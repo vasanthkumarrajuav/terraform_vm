@@ -18,3 +18,9 @@ variable "tenant_id" {
   type        = string
   description = "Azure Tenant ID"
 }
+
+variable "vm_admin_password" {
+  description = "Admin password for VM"
+  type        = string
+  sensitive   = true
+}
